@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utilities.css">
+    <title>One Tech | Electronic Products</title>
+</head>
+
+<body>
+
+    <div class="top-nav bg-gray py-2 border-bottom d-sm-none d-md-block">
+        <div class="top-nav-inner | container d-flex justify-content-between align-items-center fw-lighter">
+            <ul class="d-flex gap-5">
+                <li><i class="fa fa-phone"></i>&nbsp;&nbsp; +38 060 8973475</li>
+                <li><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp; onetech@gmail.com</li>
+            </ul>
+            <ul class="d-flex justify-content-between align-items-center">
+                <li class="border-end py-0 pe-3"><i class="fa fa-user"></i>&nbsp; Register</li>
+                <li class="ps-3"><i class="fa fa-account"></i> Sign in</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="middle-nav container py-md-5 py-sm-3">
+        <div class="middle-nav-inner d-flex justify-content-between align-items-center">
+            <a class="logo" href="index.html"><img src="images/Link → OneTech.png"></a>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="search here...">
+                <select>
+                    <option>All Categories</option>
+                    <option>Computer & Laptops</option>
+                    <option>Laptops</option>
+                    <option>Hardware</option>
+                    <option>Smartphones</option>
+                    <option>Cameras</option>
+                </select>
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="d-flex gap-s-2 gap-md-5 cart-wish">
+                <div class="d-flex align-items-center gap-sm-0 gap-md-3">
+                    <img src="images/heart.png.png">
+                    <div>
+                        <a href="#" class="text-black fs-18">Wishlist</a><br>
+                        <span class="txt-gray fs-14">115</span>
+                    </div>
+                </div>
+                <div class="cart d-flex align-items-center gap-sm-2 gap-md-3">
+                    <img src="images/cart.png.png">
+                    <div>
+                        <a href="#" class="text-black fs-18">Cart</a><br>
+                        <span class="txt-gray fs-14">$85</span>
+                    </div>
+                    <div class="cart-count">
+                        0
+                    </div>
+                    <div class="cart-items">
+                        <div class="cart-items-row">
+                            <!-- cart items to be appended here -->
+                        </div>
+                        <div>
+                            <p class="empty-text">Your Cart Is Empty</p>
+                            <p class="text-end fw-bold total-price pe-1">Total Price: $00</p>
+                            <button class="button check-out">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg p-0 shadow">
+            <div class="container">
+                <ul>
+                    <li class="categories text-white py-3 gap-2 d-flex align-items-center bg-main" href="#"><img
+                            src="images/div.cat_burger.png">CATEGORIES
+                        <ul class="categories-dropdown">
+                            <li><a href="#">Computer & Laptops</a></li>
+                            <li><a href="#">Cameras & Photos</a></li>
+                            <li><a href="#">Hardware</a></li>
+                            <li><a href="#">SmartPhones & Tablets</a></li>
+                            <li><a href="#">TV & Audio</a></li>
+                            <li><a href="#">Gadgets</a></li>
+                            <li><a href="#">Car Electronics</a></li>
+                            <li><a href="#">Video Games & Consoles</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><img src="images/div.cat_burger.png"
+                        alt=""></button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item search-sm d-sm-block d-lg-none">
+                            <input type="text" class="navlink border-0 ps-2 py-1 w-100" placeholder="search here...">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Super Deals</a>
+                            <ul class="dropdown-men">
+                                <li><a class="dropdown-item" href="#">Menu 1</a></li>
+                                <li><a class="dropdown-item" href="#">Menu 2</a></li>
+                                <li><a class="dropdown-item" href="#">Menu 3</a></li>
+                                <li><a class="dropdown-item" href="#">Menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Featured Brands</a>
+                            <ul class="dropdown-men">
+                                <li><a class="dropdown-item" href="#">Menu 1</a></li>
+                                <li><a class="dropdown-item" href="#">Menu 2</a></li>
+                                <li><a class="dropdown-item" href="#">Menu 3</a></li>
+                                <li><a class="dropdown-item" href="#">Menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Pages</a>
+                            <ul class="dropdown-men">
+                                <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                <li><a class="dropdown-item" href="product.html">Product</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Post</a></li>
+                                <li><a class="dropdown-item" href="#">Regular Post</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <div class="d-flex text-white flex-wrap">
+                            <li class="nav-item d-lg-none d-sm-block"><i class="fa fa-phone"></i>&nbsp;&nbsp; +38 060
+                                8973475</li>
+                            <li class="nav-item d-lg-none d-sm-block"><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;
+                                onetech@gmail.com</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner">
+            <div class="banner-inner container-fluid">
+                <div class="banner-left">
+                    <h1 class="txt-blue my-">NEW ERA OF SMARTPHONES</h1>
+                    <div>
+                        <span class="fs-30 txt-gray"><del>$530</del></span>
+                        <span class="fs-30 txt-danger">$460</span>
+                    </div>
+                    <p class="fs-18 text-black">Apple Iphone 6s</p>
+                    <button class="button mt-3">Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="policy container my-5">
+        <div class="policy-inner">
+            <div class="row gap-4 mx-auto justify-content-between">
+                <div class="col-md-2 col-sm-12 border shadow d-flex gap-4 align-items-center py-4 ps-4 pe-5">
+                    <img src="images/char_1.png.png">
+                    <div>
+                        <p class="fs-14 text-black m-0 fw-bold">Free Delivery</p>
+                        <span class="fs-12 txt-gray2 m-0">from $50</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12 border shadow d-flex gap-4 align-items-center py-4 ps-4 pe-5">
+                    <img src="images/char_2.png.png">
+                    <div>
+                        <p class="fs-14 text-black m-0 fw-bold">Free Delivery</p>
+                        <span class="fs-12 txt-gray2 m-0">from $50</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12 border shadow d-flex gap-4 align-items-center py-4 ps-4 pe-5">
+                    <img src="images/char_3.png.png">
+                    <div>
+                        <p class="fs-14 text-black m-0 fw-bold">Free Delivery</p>
+                        <span class="fs-12 txt-gray2 m-0">from $50</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12 border shadow d-flex gap-4 align-items-center py-4 ps-4 pe-5">
+                    <img src="images/char_4.png.png">
+                    <div>
+                        <p class="fs-14 text-black m-0 fw-bold">Free Delivery</p>
+                        <span class="fs-12 txt-gray2 m-0">from $50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="my-5">
+        <section class="deals container my-5">
+            <div class="deals-inner">
+                <div class="row justify-content-center">
+
+                    <div class="deals-con col-lg-4 deals-col col-md-7 col-sm-9 shadow py-3 px-5 rounded-2">
+
+                        <div class="d-flex justify-content-between align-items-baseline">
+                            <p class="fs-18">Deals of the week</p>
+                            <div class="d-flex gap-2">
+                                <img src="images/Symbol.png" class="deals-left">
+                                <img src="images/Symbol-1.png" class="deals-right">
+                            </div>
+                        </div>
+                        <div class="deals-product">
+
+                            <div class="one">
+                                <div>
+                                    <img src="images/deals.png.png">
+                                </div>
+                                <div
+                                    class="d-flex justify-content-sm-between justify-content-lg-around justify-content-xl-between mt-4">
+                                    <span class="txt-gray fs-14">Headphones</span>
+                                    <span class="txt-gray fs-14">$300</span>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-sm-between justify-content-lg-around justify-content-xl-between">
+                                    <p class="fs-24 fw-bold">Beoplay</p>
+                                    <p class="fs-24 txt-danger fw-bold">$225</p>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-sm-between justify-content-lg-around justify-content-xl-between">
+                                    <span class="fs-12 txt-gray">Available</span>
+                                    <span class="fs-12 txt-gray">Already sold: <strong>28</strong></span>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-sm-between justify-content-lg-center justify-content-xl-between mt-3">
+                                    <div>
+                                        <p class="fs-14 m-0 fw-bold">Hurry up</p>
+                                        <span class="fs-12 txt-gray m-0">offer ends in:</span>
+                                    </div>
+                                    <div class="time d-flex justify-content-between align-items-center pt-3">
+                                        <p class="fs-24 hours border px-2 fw-bold">32</p>
+                                        <p class="fs-24 mins border px-2 fw-bold">50</p>
+                                        <p class="fs-24 secs border px-2 fw-bold">20</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="two">
+                                <div>
+                                    <img src="images/deals.png.png">
+                                </div>
+                                <div
+                                    class="d-flex justify-content-sm-between justify-content-lg-around justify-content-xl-between mt-4">
+                                    <span class="txt-gray fs-14">Headphones</span>
+                                    <span class="txt-gray fs-14">$300</span>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-sm-between justify-content-lg-around justify-content-xl-between">
+                                    <p class="fs-24 fw-bold">Beoplay</p>
+                                    <p class="fs-24 txt-danger fw-bold">$225</p>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-sm-between justify-content-lg-around justify-content-xl-between">
+                                    <span class="fs-12 txt-gray">Available</span>
+                                    <span class="fs-12 txt-gray">Already sold: <strong>28</strong></span>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-sm-between justify-content-lg-center justify-content-xl-between mt-3">
+                                    <div>
+                                        <p class="fs-14 m-0 fw-bold">Hurry up</p>
+                                        <span class="fs-12 txt-gray m-0">offer ends in:</span>
+                                    </div>
+                                    <div class="time d-flex justify-content-between align-items-center pt-3">
+                                        <p class="fs-24 hours border px-2 fw-bold">32</p>
+                                        <p class="fs-24 mins border px-2 fw-bold">50</p>
+                                        <p class="fs-24 secs border px-2 fw-bold">20</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-12">
+                        <div class="col-inner">
+                            <ul class="fs-18 d-flex gap-4 deals-li my-4" role="list">
+                                <li class="txt-gray active">Featured</li>
+                                <li class="txt-gray">On Sale</li>
+                                <li class="txt-gray">Best Rated</li>
+                            </ul>
+                            <div class="row products">
+                                <!-- products appended here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular container">
+            <div class="popular-inner">
+                <div class="row">
+                    <div class="col-md-3 d-flex flex-column justify-content-around">
+                        <h3 class="fs-30 fw-bold">Popular <br> Categories</h3>
+
+                        <a href="#" class="fs-12">FULL CATALOG</a>
+                    </div>
+                    <div class="col-md-9 my-3">
+                        <div class="row justify-content-around">
+                            <div class="col-md-2 popular-box bg-1">
+                                <img src="images/popular_1.png.png">
+                            </div>
+                            <div class="col-md-2 popular-box">
+                                <img src="images/popular_2.png.png">
+                            </div>
+                            <div class="col-md-2 popular-box bg-1">
+                                <img src="images/popular_3.png.png">
+                            </div>
+                            <div class="col-md-2 popular-box">
+                                <img src="images/popular_4.png.png">
+                            </div>
+                            <div class="col-md-2 popular-box bg-1">
+                                <img src="images/popular_5.png.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="macbook">
+            <div class="macbook-inner container">
+                <div class="row align-items-center gap-sm-5 gap-md-0">
+                    <div class="col-md-4 col-sm-12 one">
+                        <span class="fs-12 txt-gray-o1 fw-bold">LAPTOP</span>
+                        <h2 class="fs-30 my-sm-0 my-md-3 fw-bold">MacBook Air 13</h2>
+                        <p class="txt-gray my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, aliquid?
+                        </p>
+                        <button class="button ">Explore</button>
+                    </div>
+                    <div class="col-md-8 col-sm-11 two">
+                        <img src="images/banner_2_product.png.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-arrival container my-5">
+            <h3 class="fw-bold border-bottom">Hot New Arrival</h3>
+            <div class="new-arrival-inner">
+                <div class="row">
+                    <div class="new-product">
+
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/new_1.jpg.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/product_image-1.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/new_2.jpg.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/new_4.jpg.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/new_6.jpg.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/new_8.jpg.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/product_image-2.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/product_image.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/product_image-2.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/new_2.jpg-1.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/new_4.jpg.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="product text-center border-right position-relative">
+                            <div class="product-inner">
+                                <div class="new position-absolute">
+                                    <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                                </div>
+                                <div class="product-img d-flex justify-content-center align-items-center">
+                                    <img src="images/product_image-1.png">
+                                </div>
+                                <div
+                                    class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                                    <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                                </div>
+                                <div class="product-desc">
+                                    <span class="fs-14">Astro M2 Black</span>
+                                </div>
+                                <button class="cart-btn">Add To Cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="best-seller bg-1 p-3 pb-5">
+            <h3 class="fw-bold border-bottom my-4 pb-2 container">Hot Best Selles</h3>
+            <div class="best-sellers-inner container">
+                <div class="best-product-row">
+                    <div class="best-product d-flex bg-white py-4 ps-2">
+                        <div class="best-img">
+                            <img src="images/best_1.png.png">
+                        </div>
+                        <div class="best-desc">
+                            <span class="fs-12 txt-gray">HEADPHONE</span>
+                            <p>Xiaomi Redmi Note 4</p>
+                            <p class="fw-bold">$450</p>
+
+                        </div>
+                    </div>
+                    <div class="best-product d-flex bg-white py-4 ps-4">
+                        <div class="best-img">
+                            <img src="images/best_2.png.png">
+                        </div>
+                        <div class="best-desc">
+                            <span class="fs-12 txt-gray">HEADPHONE</span>
+                            <p>Xiaomi Redmi Note 4</p>
+                            <p class="fw-bold">$450</p>
+
+                        </div>
+                    </div>
+                    <div class="best-product d-flex bg-white py-4 ps-4">
+                        <div class="best-img">
+                            <img src="images/best_3.png.png">
+                        </div>
+                        <div class="best-desc">
+                            <span class="fs-12 txt-gray">HEADPHONE</span>
+                            <p>Xiaomi Redmi Note 4</p>
+                            <p class="fw-bold">$450</p>
+
+                        </div>
+                    </div>
+                    <div class="best-product d-flex bg-white py-4 ps-4">
+                        <div class="best-img">
+                            <img src="images/best_4.png.png">
+                        </div>
+                        <div class="best-desc">
+                            <span class="fs-12 txt-gray">HEADPHONE</span>
+                            <p>Xiaomi Redmi Note 4</p>
+                            <p class="fw-bold">$450</p>
+
+                        </div>
+                    </div>
+                    <div class="best-product d-flex bg-white py-4 ps-4">
+                        <div class="best-img">
+                            <img src="images/best_5.png.png">
+                        </div>
+                        <div class="best-desc">
+                            <span class="fs-12 txt-gray">HEADPHONE</span>
+                            <p>Xiaomi Redmi Note 4</p>
+                            <p class="fw-bold">$450</p>
+
+                        </div>
+                    </div>
+                    <div class="best-product d-flex bg-white py-4 ps-4">
+                        <div class="best-img">
+                            <img src="images/best_6.png.png">
+                        </div>
+                        <div class="best-desc">
+                            <span class="fs-12 txt-gray">HEADPHONE</span>
+                            <p>Xiaomi Redmi Note 4</p>
+                            <p class="fw-bold">$450</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container advert">
+            <div class="row justify-content-between advert-inner mx-sm-auto">
+                <div class="col-md-4 col-sm-12 box d-flex border justify-content-center align-items-center">
+                    <div class="d-flex flex-column justify-content-end">
+                        <p class="fs-18 fw-bold my-1">Trends 2018</p>
+                        <p class="txt-gray fs-14">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate,
+                            et.</p>
+                    </div>
+                    <div>
+                        <img src="images/adv_1.png.png">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 box d-flex border justify-content-center align-items-center">
+                    <div class="">
+                        <span class="fs-12 txt-gray m-0">Trends 2018</span>
+                        <p class="fs-18 fw-bold txt-main m-0 mt-3">Sale - 45%</p>
+                        <p class="txt-gray fs-14">Lorem ipsum dolor, sit amet . Cupiditate, et.</p>
+                    </div>
+                    <div>
+                        <img src="images/adv_2.png.png">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 box d-flex border justify-content-center align-items-center">
+                    <div class="">
+                        <p class="fs-18 fw-bold my-1">Trends 2018</p>
+                        <p class="txt-gray fs-14">Lorem ipsum dolor, sit Cupiditate, et.</p>
+                    </div>
+                    <div>
+                        <img src="images/adv_3.png.png">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="trends py-5 bg-1">
+            <div class="trends-inner container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 d-flex flex-column justify-content-center my-3">
+                        <h2 class="fw-bold">Trends <br> 2018</h2>
+                        <p class="txt-gray fs-14">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
+                            quisquam?</p>
+                        <div class="d-flex gap-3 symbols d-md-block d-lg-none">
+                            <img src="images/Symbol.png" class="d-inline mx-2 symbol1">
+                            <img src="images/Symbol-1.png" class="d-inline symbol2">
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-12 box-div" id="box">
+                        <div class="box bg-white">
+                            <div class="d-flex justify-content-center mt-5">
+                                <img src="images/trends_1.jpg.png" class="mx-auto">
+                            </div>
+                            <div>
+                                <span class="fs-12 txt-gray">SmartPhones</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="fw-light">Jump White</p>
+                                    <p class="fw-bold">$379</p>
+                                </div>
+                            </div>
+                            <p class="new">new</p>
+                        </div>
+                        <div class="box bg-white">
+                            <div class="d-flex justify-content-center mt-5">
+                                <img src="images/trends_2.jpg.png" class="mx-auto" height="180px">
+                            </div>
+                            <div>
+                                <span class="fs-12 txt-gray">SmartPhones</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="fw-light">Jump White</p>
+                                    <p class="fw-bold">$379</p>
+                                </div>
+                            </div>
+                            <p class="new">new</p>
+                        </div>
+                        <div class="box bg-white">
+                            <div class="d-flex justify-content-center mt-5">
+                                <img src="images/trends_3.jpg.png" class="mx-auto">
+                            </div>
+                            <div>
+                                <span class="fs-12 txt-gray">SmartPhones</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="fw-light">Jump White</p>
+                                    <p class="fw-bold">$379</p>
+                                </div>
+                            </div>
+                            <p class="new">new</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="reviews-main">
+        <div class="reviews-inner container">
+            <h3 class="fw-bold border-bottom py-2">Latest Reviews</h3>
+            <div class="dots">
+                <span class="dot1 bg-main">.</span>
+                <span class="dot2">.</span>
+            </div>
+
+            <div class="reviews py-4">
+                <div class="review-box d-flex align-items-center">
+                    <div>
+                        <img src="images/review_1.jpg.png">
+                    </div>
+                    <div>
+                        <p class="fw-bold m-0">Roberto Sanchez</p>
+                        <span class="fs-12 txt-gray-o1">2 days ago</span>
+                        <p class="fs-12 txt-gray fw-bold">Lorem ipsum dolor sit amet consectetur, unde sed. re nihil
+                            consectetur?</p>
+                    </div>
+                </div>
+                <div class="review-box d-flex align-items-center">
+                    <div>
+                        <img src="images/review_2.jpg.png">
+                    </div>
+                    <div>
+                        <p class="fw-bold m-0">Roberto Sanchez</p>
+                        <span class="fs-12 txt-gray-o1">2 days ago</span>
+                        <p class="fs-12 txt-gray fw-bold">Lorem ipsum dolor sit amet consectetur, unde sed. re nihil
+                            consectetur?</p>
+                    </div>
+                </div>
+                <div class="review-box d-flex align-items-center">
+                    <div>
+                        <img src="images/review_3.jpg.png">
+                    </div>
+                    <div>
+                        <p class="fw-bold m-0">Roberto Sanchez</p>
+                        <span class="fs-12 txt-gray-o1">2 days ago</span>
+                        <p class="fs-12 txt-gray fw-bold">Lorem ipsum dolor sit amet consectetur, unde sed. re nihil
+                            consectetur?</p>
+                    </div>
+                </div>
+                <div class="review-box d-flex align-items-center">
+                    <div>
+                        <img src="images/review_1.jpg.png">
+                    </div>
+                    <div>
+                        <p class="fw-bold m-0">Roberto Sanchez</p>
+                        <span class="fs-12 txt-gray-o1">2 days ago</span>
+                        <p class="fs-12 txt-gray fw-bold">Lorem ipsum dolor sit amet consectetur, unde sed. re nihil
+                            consectetur?</p>
+                    </div>
+                </div>
+                <div class="review-box d-flex align-items-center">
+                    <div>
+                        <img src="images/review_2.jpg.png">
+                    </div>
+                    <div>
+                        <p class="fw-bold m-0">Roberto Sanchez</p>
+                        <span class="fs-12 txt-gray-o1">2 days ago</span>
+                        <p class="fs-12 txt-gray fw-bold">Lorem ipsum dolor sit amet consectetur, unde sed. re nihil
+                            consectetur?</p>
+                    </div>
+                </div>
+                <div class="review-box d-flex align-items-center">
+                    <div>
+                        <img src="images/review_3.jpg.png">
+                    </div>
+                    <div>
+                        <p class="fw-bold m-0">Roberto Sanchez</p>
+                        <span class="fs-12 txt-gray-o1">2 days ago</span>
+                        <p class="fs-12 txt-gray fw-bold">Lorem ipsum dolor sit amet consectetur, unde sed. re nihil
+                            consectetur?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent bg-1 py-5">
+        <div class="recent-inner container">
+            <div class="d-flex justify-content-between align-items-center border-bottom">
+                <h3 class="fw-bold">Recently Viewed</h3>
+                <div class="d-flex gap-3 symbols">
+                    <img src="images/Symbol.png" class="sym1">
+                    <img src="images/Symbol-1.png" class="sym2">
+                </div>
+            </div>
+            <div class="recent-products py-4">
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="sale position-absolute">
+                            <p class="text-white fs-12 bg-dan rounded-5">-25%</p>
+                        </div>
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/best_1.png.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">Samsunf JF53T1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/best_2.png.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">Samsunf JF53T1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/best_3.png.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">Samsunf JF53T1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="new position-absolute">
+                            <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                        </div>
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/best_4.png.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">Samsunf JF53T1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/best_5.png.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$13</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">Sony PS4 Slim</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/best_6.png.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$10</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">SpeedLink...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="sale position-absolute">
+                            <p class="text-white fs-12 bg-dan rounded-5">-25%</p>
+                        </div>
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/best_1.png.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$100</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">Beoplay H7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/product_image-1.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$240</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">LUNA SmartPhone</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/product_image-2.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">Samsunf JF53T1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="new position-absolute">
+                            <p class="text-white fs-12 bg-dan rounded-5">new</p>
+                        </div>
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/product_image.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">Mobile Huawei</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="sale position-absolute">
+                            <p class="text-white fs-12 bg-dan rounded-5">-25%</p>
+                        </div>
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/best_1.png.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$120</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">Samsunf JF53T1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product text-center position-relative">
+                    <div class="product-inner">
+                        <div class="product-img d-flex justify-content-center align-items-center">
+                            <img src="images/new_1.jpg.png">
+                        </div>
+                        <div class="product-price ${x.class} d-flex justify-content-center align-items-baseline gap-2">
+                            <p class="fs-16 fw-bold mt-4 mb-0">$12</p>
+                        </div>
+                        <div class="product-desc">
+                            <span class="fs-14">Huawei MediaPad</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="brands shadow border container">
+        <div class="brands-inner">
+            <div class="brands-row">
+                <div>
+                    <img src="images/brands_1.jpg.png">
+                </div>
+                <div>
+                    <img src="images/brands_2.jpg.png">
+                </div>
+                <div>
+                    <img src="images/brands_3.jpg.png">
+                </div>
+                <div>
+                    <img src="images/brands_4.jpg.png">
+                </div>
+                <div>
+                    <img src="images/brands_5.jpg.png">
+                </div>
+                <div>
+                    <img src="images/brands_6.jpg.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner pt-5">
+            <div class="bg-gray shadow">
+                <div class="new-letter py-5 container">
+                    <div class="row gap-s-2">
+                        <div class="col-md-4 col-sm-12 d-flex gap-3 align-items-center flex-wrap">
+                            <img src="images/send.png.webp">
+                            <div>
+                                <p class="fs-18 m-0">Sign up for Newsletter</p>
+                                <span class="fs-14 txt-gray">...and recieve %20 coupon for first shopping</span>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-8 col-sm-12 d-flex gap-3 align-items-center justify-content-md-end flex-wrap justify-content-sm-center">
+                            <div class="news-input border w-75 d-flex justify-content-between">
+                                <input type="text" class="border-0 ps-2 w-100" placeholder="Enter your email adress...">
+                                <button class="button">Subscribe</button>
+                            </div>
+                            <span class="fw-bold fs-12 txt-main">UNSUBSCRIBE</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-nav container py-5">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12">
+                        <h2 class="fw-bold text-black footer-logo">OneTech</h2>
+                        <p class="fs-14 fw-bold">Got Question? Call Us 24/7</p>
+                        <p class="fs-18 txt-main fw-bold">+38 068 876 3570</p>
+                        <span class="fs-14 txt-gray">17 Princess Road, London <br> Grester London NW18JR, UK</span>
+                        <div class="social-icons my-3">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-pinterest"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 col-sm-12">
+                        <div class="d-flex flex-wrap gap-5 row">
+
+                            <ul class="col-md-3">
+                                <p class="fw-bold fs-14">Find it Fast</p>
+                                <li><a href="#">Computer & Laptops</a></li>
+                                <li><a href="#">Cameras & Photos</a></li>
+                                <li><a href="#">Hardware</a></li>
+                                <li><a href="#">SmartPhones & Tablets</a></li>
+                                <li><a href="#">TV & Audio</a></li>
+                                <li><a href="#">Gadgets</a></li>
+                                <li><a href="#">Car Electronics</a></li>
+                            </ul>
+                            <ul class="col-md-3 mt-5">
+                                <li><a href="#">Video Games & Consoles</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Computer & Laptops</a></li>
+                                <li><a href="#">Cameras & Photos</a></li>
+                                <li><a href="#">Hardware</a></li>
+                            </ul>
+
+                            <ul class="col-md-3">
+                                <p class="fw-bold fs-14">Customer Care</p>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order Tracking</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">Computer Services</a></li>
+                                <li><a href="#">Returns & Exchange</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Product Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="copy-right bg-gray border-top py-4">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="txt-gray fs-12">Copyright ©2023 All rights reserved</span>
+                        <img src="images/List.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
